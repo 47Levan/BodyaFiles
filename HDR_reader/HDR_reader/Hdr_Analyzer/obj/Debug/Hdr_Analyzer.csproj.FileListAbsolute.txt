@@ -1,2 +1,7 @@
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.FormMain.resources
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.Properties.Resources.resources
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.csproj.GenerateResource.Cache
 d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.exe
 d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.pdb
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.XML
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\System.Web.Extensions.dll

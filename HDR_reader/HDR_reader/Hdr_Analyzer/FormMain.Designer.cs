@@ -33,6 +33,8 @@ namespace Hdr_Analyzer
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxDir = new System.Windows.Forms.TextBox();
             this.ButtonDir = new System.Windows.Forms.Button();
@@ -46,6 +48,8 @@ namespace Hdr_Analyzer
             this.ColumnCounters = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnLimits = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnChange = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.SafeNameTXT = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.SafeRow = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,10 +99,12 @@ namespace Hdr_Analyzer
             this.ColumnPoints,
             this.ColumnCounters,
             this.ColumnLimits,
-            this.ColumnChange});
+            this.ColumnChange,
+            this.SafeNameTXT,
+            this.SafeRow});
             this.dataGridView.Location = new System.Drawing.Point(13, 72);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(1048, 391);
+            this.dataGridView.Size = new System.Drawing.Size(1181, 391);
             this.dataGridView.TabIndex = 3;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
@@ -166,11 +172,31 @@ namespace Hdr_Analyzer
             this.ColumnChange.Text = "Change...";
             this.ColumnChange.Width = 80;
             // 
+            // SafeNameTXT
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Silver;
+            this.SafeNameTXT.DefaultCellStyle = dataGridViewCellStyle6;
+            this.SafeNameTXT.HeaderText = "Save name";
+            this.SafeNameTXT.Name = "SafeNameTXT";
+            this.SafeNameTXT.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.SafeNameTXT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // SafeRow
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.SafeRow.DefaultCellStyle = dataGridViewCellStyle7;
+            this.SafeRow.HeaderText = "Save row";
+            this.SafeRow.Name = "SafeRow";
+            this.SafeRow.Text = "Save...";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 475);
+            this.ClientSize = new System.Drawing.Size(1242, 475);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.ButtonDir);
             this.Controls.Add(this.textBoxDir);
@@ -198,6 +224,8 @@ namespace Hdr_Analyzer
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCounters;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnLimits;
         private System.Windows.Forms.DataGridViewButtonColumn ColumnChange;
+        private System.Windows.Forms.DataGridViewButtonColumn SafeNameTXT;
+        private System.Windows.Forms.DataGridViewButtonColumn SafeRow;
     }
 }
 
