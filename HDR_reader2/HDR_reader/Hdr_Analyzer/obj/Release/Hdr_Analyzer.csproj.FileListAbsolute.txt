@@ -1,0 +1,3 @@
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Release\Hdr_Analyzer.FormMain.resources
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Release\Hdr_Analyzer.Properties.Resources.resources
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Release\Hdr_Analyzer.csproj.GenerateResource.Cache

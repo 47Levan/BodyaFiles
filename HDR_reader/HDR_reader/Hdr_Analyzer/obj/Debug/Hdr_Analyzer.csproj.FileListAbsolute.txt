@@ -1,1 +1,2 @@
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.exe
 d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.pdb
