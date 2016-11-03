@@ -1,11 +1,14 @@
 using System;
-using System.IO;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 
-public unsafe struct HDR_HEADER
+unsafe public struct HDR_HEADER
 {
     /*
     **  Common HDR header structure that is passed around
@@ -18,7 +21,7 @@ public unsafe struct HDR_HEADER
 	**  be changed since nobody should yet be using these extra
 	**  fields.  
     */
-	internal fixed byte name[24];
+	fixed byte name[24];
 	public int  start_time;
     public int end_time;
 	int  time_recording_start;	// time HDR started recording
@@ -106,7 +109,7 @@ public unsafe struct HDR_HEADER
 
 namespace Hdr_Analyzer
 {
-    public unsafe partial class FormMain : Form
+    public partial class FormMain : Form
     {
         public FormMain()
         {
@@ -124,7 +127,7 @@ namespace Hdr_Analyzer
                 {
                     System.IO.FileInfo fi = new System.IO.FileInfo(openFileDialog.FileName);
                     textBoxDir.Text = fi.DirectoryName;
-                    
+
                     string[] files = System.IO.Directory.GetFiles(fi.DirectoryName, "*.dat");
                     dataGridView.Rows.Clear();
                     dataGridView.Rows.Add(files.Length);
@@ -156,9 +159,6 @@ namespace Hdr_Analyzer
                             dataGridView.Rows[i].Cells[6].Value = header.end_limit - header.start_limit+1;
 
                             dataGridView.Rows[i].Cells[7].Value = "Change...";
-                            dataGridView.Rows[i].Cells[8].ValueType = typeof (Button);
-                            dataGridView.Rows[i].Cells[8].Value = "Save to txt";
-
                         }
                         catch
                         {
@@ -174,8 +174,7 @@ namespace Hdr_Analyzer
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             unsafe
-            {
-                #region ColumnIndex=7    
+            {            
                 if (e.ColumnIndex == 7)
                 {
                     HDR_HEADER header; string S = "";
@@ -188,6 +187,8 @@ namespace Hdr_Analyzer
                         fs.Read(bytes, 0, sizeof(HDR_HEADER));
                         System.Runtime.InteropServices.Marshal.Copy(bytes, 0, ptr, sizeof(HDR_HEADER));
                         fs.Close(); fs = null;
+
+
                         try
                         {
                             S = "Analogs count";
@@ -229,42 +230,8 @@ namespace Hdr_Analyzer
                     }
                     if (fs != null) { fs.Close(); }
                 }
-                #endregion
-                #region ColumnIndex=8    
-                if (e.ColumnIndex == 8)
-                {
-                    SaveFileDialog dialog = new SaveFileDialog
-                    {
-                        Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*",
-                        FilterIndex = 2,
-                        RestoreDirectory = true
-                    };
-                    HDR_HEADER header;
-                    byte[] bytes = new byte[sizeof(HDR_HEADER)];
-                    IntPtr ptr = new IntPtr(&header);
-                    Stream fs = new FileStream(textBoxDir.Text + "\\" 
-                        + dataGridView.Rows[e.RowIndex].Cells[0].Value
-                        , FileMode.Open);
-                    fs.Read(bytes, 0, sizeof (HDR_HEADER));
-                    Marshal.Copy(bytes, 0, ptr, sizeof(HDR_HEADER));
-                    if (dialog.ShowDialog() == DialogResult.OK)
-                    {
-                        if ((fs == dialog.OpenFile()) != null)
-                        {
-                            byte name = *header.name;
-                            byte[] buffer = Encoding.UTF8.GetBytes(name.ToString());
-                            fs.Write(buffer,0,buffer.Length);
-                            fs.Close();
-                        }
-                    }
-                }
-                #endregion
+
             }
-        }
-
-        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

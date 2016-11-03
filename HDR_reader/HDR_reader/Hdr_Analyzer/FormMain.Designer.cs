@@ -28,12 +28,11 @@ namespace Hdr_Analyzer
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxDir = new System.Windows.Forms.TextBox();
             this.ButtonDir = new System.Windows.Forms.Button();
@@ -47,7 +46,6 @@ namespace Hdr_Analyzer
             this.ColumnCounters = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnLimits = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnChange = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.SaveToTxt = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,14 +95,12 @@ namespace Hdr_Analyzer
             this.ColumnPoints,
             this.ColumnCounters,
             this.ColumnLimits,
-            this.ColumnChange,
-            this.SaveToTxt});
-            this.dataGridView.Location = new System.Drawing.Point(9, 72);
+            this.ColumnChange});
+            this.dataGridView.Location = new System.Drawing.Point(13, 72);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(1095, 391);
+            this.dataGridView.Size = new System.Drawing.Size(1048, 391);
             this.dataGridView.TabIndex = 3;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
-            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // ColumnFile
             // 
@@ -128,41 +124,41 @@ namespace Hdr_Analyzer
             // 
             // ColumnAnalogs
             // 
-            dataGridViewCellStyle7.NullValue = null;
-            this.ColumnAnalogs.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.NullValue = null;
+            this.ColumnAnalogs.DefaultCellStyle = dataGridViewCellStyle1;
             this.ColumnAnalogs.HeaderText = "Analogs";
             this.ColumnAnalogs.Name = "ColumnAnalogs";
             this.ColumnAnalogs.Width = 90;
             // 
             // ColumnPoints
             // 
-            dataGridViewCellStyle8.NullValue = null;
-            this.ColumnPoints.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.NullValue = null;
+            this.ColumnPoints.DefaultCellStyle = dataGridViewCellStyle2;
             this.ColumnPoints.HeaderText = "Points";
             this.ColumnPoints.Name = "ColumnPoints";
             this.ColumnPoints.Width = 90;
             // 
             // ColumnCounters
             // 
-            dataGridViewCellStyle9.NullValue = null;
-            this.ColumnCounters.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.NullValue = null;
+            this.ColumnCounters.DefaultCellStyle = dataGridViewCellStyle3;
             this.ColumnCounters.HeaderText = "Counters";
             this.ColumnCounters.Name = "ColumnCounters";
             this.ColumnCounters.Width = 90;
             // 
             // ColumnLimits
             // 
-            dataGridViewCellStyle10.NullValue = null;
-            this.ColumnLimits.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.NullValue = null;
+            this.ColumnLimits.DefaultCellStyle = dataGridViewCellStyle4;
             this.ColumnLimits.HeaderText = "Limits";
             this.ColumnLimits.Name = "ColumnLimits";
             this.ColumnLimits.Width = 90;
             // 
             // ColumnChange
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Silver;
-            this.ColumnChange.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Silver;
+            this.ColumnChange.DefaultCellStyle = dataGridViewCellStyle5;
             this.ColumnChange.HeaderText = "Update";
             this.ColumnChange.Name = "ColumnChange";
             this.ColumnChange.ReadOnly = true;
@@ -170,20 +166,11 @@ namespace Hdr_Analyzer
             this.ColumnChange.Text = "Change...";
             this.ColumnChange.Width = 80;
             // 
-            // SaveToTxt
-            // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Silver;
-            this.SaveToTxt.DefaultCellStyle = dataGridViewCellStyle12;
-            this.SaveToTxt.HeaderText = "Save to txt";
-            this.SaveToTxt.Name = "SaveToTxt";
-            this.SaveToTxt.Text = "Save...";
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1173, 475);
+            this.ClientSize = new System.Drawing.Size(1073, 475);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.ButtonDir);
             this.Controls.Add(this.textBoxDir);
@@ -211,7 +198,6 @@ namespace Hdr_Analyzer
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCounters;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnLimits;
         private System.Windows.Forms.DataGridViewButtonColumn ColumnChange;
-        private System.Windows.Forms.DataGridViewButtonColumn SaveToTxt;
     }
 }
 

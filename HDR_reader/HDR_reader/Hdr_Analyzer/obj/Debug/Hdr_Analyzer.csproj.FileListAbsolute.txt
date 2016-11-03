@@ -1,8 +1,1 @@
-D:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.exe
-D:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.pdb
-D:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.csprojResolveAssemblyReference.cache
-D:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.FormMain.resources
-D:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.Properties.Resources.resources
-D:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.csproj.GenerateResource.Cache
-D:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\Hdr_Analyzer.exe
-D:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\Hdr_Analyzer.pdb
+d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.pdb
