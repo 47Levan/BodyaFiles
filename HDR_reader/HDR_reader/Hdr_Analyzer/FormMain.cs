@@ -261,7 +261,7 @@ namespace Hdr_Analyzer
 
                 #region ColumnIndex=8    
 
-                if (e.ColumnIndex == 8)
+                if (e.ColumnIndex == 8 && e.RowIndex>=0)
                 {
                     SaveFileDialog dialog = new SaveFileDialog
                     {
@@ -294,7 +294,7 @@ namespace Hdr_Analyzer
 
                 #endregion
                 #region ColumnIndex=9    
-                if (e.ColumnIndex == 9)
+                if (e.ColumnIndex == 9 && e.RowIndex >= 0)
                 {
                     SaveFileDialog dialog = new SaveFileDialog
                     {
