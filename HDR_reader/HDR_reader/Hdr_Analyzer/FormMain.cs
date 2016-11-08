@@ -282,9 +282,17 @@ namespace Hdr_Analyzer
                         {
                             using (Stream stream = dialog.OpenFile())
                             {
-                                byte name = *header.name;
-                                byte[] buffer = Encoding.UTF8.GetBytes(name.ToString());
-                                stream.Write(buffer, 0, buffer.Length);
+                                byte[] names = new byte[24];
+                                unsafe
+                                {
+                                    int index = 0;
+                                    for (byte* counter = header.name;
+                                        *counter != 0 && index<24; counter++)
+                                    {
+                                        names[index++] = *counter;
+                                    }
+                                }
+                                stream.Write(names, 0, names.Length);
                             }
                         }
                     }
@@ -326,6 +334,17 @@ namespace Hdr_Analyzer
                     }
                 }
                 #endregion
+            }
+        }
+    }
+
+    public unsafe static class Converter
+    {
+        public static string DecodeAsciiZ(byte[] buffer)
+        {
+            fixed (byte* bytes = &buffer[0])
+            {
+                return new string((sbyte*)bytes);
             }
         }
     }

@@ -5,4 +5,3 @@ d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug
 d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.pdb
 d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.XML
 d:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\System.Web.Extensions.dll
-D:\Leva\Work\Informatika\BodyaFiles\HDR_reader\HDR_reader\Hdr_Analyzer\obj\Debug\Hdr_Analyzer.csprojResolveAssemblyReference.cache
